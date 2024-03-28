@@ -1,0 +1,15 @@
+class {
+  onCreate() {
+    this.state = {
+      counter: 0
+    } 
+  }
+  handleClick() {
+    this.state.counter += 1;
+  }
+}
+
+<button onclick('handleClick') id='marko-btn'>
+    Marko Button ${state.counter} |
+    Input From Parent ${input.reactCounter}
+</button>
